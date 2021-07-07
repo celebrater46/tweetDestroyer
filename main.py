@@ -42,13 +42,9 @@ def destroyTweets(path):
         df[colname[i]] = pd.Series(L)
 
     # データ型の整形
-    df["created_at"] = df["created_at"].str.replace('"created_at" : ', '').str.replace('"', '').str.replace(',$',
-                                                                                                            '').astype(
-        str)
+    df["created_at"] = df["created_at"].str.replace('"created_at" : ', '').str.replace('"', '').str.replace(',$', '').astype(str)
     df["created_at"] = pd.to_datetime(df["created_at"])
-    df["id"] = df["id"].str.replace('"id_str" : ', "").str.replace('"', '').str.replace(' ', '').str.replace(',',
-                                                                                                             '').astype(
-        str)
+    df["id"] = df["id"].str.replace('"id_str" : ', "").str.replace('"', '').str.replace(' ', '').str.replace(',', '').astype(str)
 
     return df
 
