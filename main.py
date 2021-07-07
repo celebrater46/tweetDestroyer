@@ -6,7 +6,6 @@ import time
 # https://hackmd.io/@drsenri/ry7ohj_rL
 
 # This is a sample Python script.
-
 # Press Ctrl+F5 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
